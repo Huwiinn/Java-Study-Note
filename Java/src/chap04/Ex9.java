@@ -18,15 +18,14 @@ public class Ex9 {
 		
 		System.out.print("구구단의 단을 입력하세요. >> : ");
 		
-		int dan = 0;
+		int dan = sc.nextInt();
+		int total;
 		
 		sc.close();
-		if(dan >= 1 || dan <= 9) {
-			for(int i = 0; i <= 9; i++ ) {
-				dan += i;
-			}	
-		}
 		
-		System.out.print("i : " + dan);
+			for(int i = 1; i <= 9; i++ ) {
+				total = dan * i;
+				System.out.printf("\n %d * %d = %2d ", dan, i, total);
+			}	
 	}
 }
